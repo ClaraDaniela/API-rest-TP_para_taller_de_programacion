@@ -1,0 +1,186 @@
+[
+    {
+        "Carrera":{
+          "id": "1",
+          "nombre": "Tecnicatura en tecnologias industriales",
+          "grado": "Tecnicatura",
+          "universidad": "UNPAZ",
+          "materias":[
+            {
+                "id": "01",
+                "nombre": "Tecnología y Sociedad",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            },
+            {
+                "id": "02",
+                "nombre": "Inglés I",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            },
+            {
+                "id": "03",
+                "nombre": "Matemática I",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            },
+            {
+                "id": "04",
+                "nombre": "Informatica",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            },
+            {
+                "id": "05",
+                "nombre": "Mecánica",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            },
+            {
+                "id": "06",
+                "nombre": "Electricidad y electrónica",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            },
+            {
+                "id": "07",
+                "nombre": "Matemática II",
+                "cuatrimestral": "1",
+                "anio": "1",
+                "carreraId": "1"
+            }
+        ]
+          }
+    },
+
+    {
+        "Carrera":{
+            "id": "2",
+            "nombre": "Licenciatura en biotecnologia",
+            "grado": "Licenciatura",
+            "universidad": "UNPAZ",
+            "materias": [
+                {
+                    "id": "04",
+                    "nombre": "Biología general",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "2"
+                },
+                {
+                    "id": "05",
+                    "nombre": "Taller Introducción a la biotecnología",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "2"
+                },
+                {
+                    "id": "08",
+                    "nombre": "Microbiología general",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "2"
+                },
+                {
+                    "id": "11",
+                    "nombre": "Quimica organica",
+                    "cuatrimestral": "1",
+                    "anio": "2",
+                    "carreraId": "2"
+                }
+            ]
+          } 
+    },
+
+    {
+        "Carrera":{
+            "id": "3",
+            "nombre": "Licenciatura en Sistemas",
+            "grado": "Licenciatura",
+            "universidad": "UNGS",
+            "materias": [
+                {
+                    "id": "01",
+                    "nombre": "Programacion I",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "3"
+                },
+                {
+                    "id": "02",
+                    "nombre": "Organizacion del computador I",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "3"
+                },
+                {
+                    "id": "03",
+                    "nombre": "Programacion I",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "3"
+                },
+                {
+                    "id": "04",
+                    "nombre": "Sistemas operativos y redes",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "3"
+                }
+            ]
+          } 
+    },
+
+    {
+        "Carrera":{
+            "id": "4",
+            "nombre": "Licenciatura en tecnologias de la informacion",
+            "grado": "Licenciatura",
+            "universidad": "UNPAZ",
+            "materias": [
+                {
+                    "id": "6003",
+                    "nombre": "Introducción a la Programación",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "4"
+                },
+                {
+                    "id": "6008",
+                    "nombre": "Algoritmos y Programación",
+                    "cuatrimestral": "1",
+                    "anio": "1",
+                    "carreraId": "4"
+                },
+                {
+                    "id": "6011",
+                    "nombre": "Sistemas Operativos I",
+                    "cuatrimestral": "1",
+                    "anio": "2",
+                    "carreraId": "4"
+                },
+                {
+                    "id": "6015",
+                    "nombre": "Paradigmas de Programación",
+                    "cuatrimestral": "1",
+                    "anio": "2",
+                    "carreraId": "4"
+                },
+                {
+                    "id": "6022",
+                    "nombre": "Comunicaciones y Redes",
+                    "cuatrimestral": "1",
+                    "anio": "2",
+                    "carreraId": "4"
+                }
+            ]
+          } 
+    }
+    
+]
