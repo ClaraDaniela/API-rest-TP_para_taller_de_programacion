@@ -11,6 +11,8 @@
 
 ```npm install joi```
 
+```npm run dev```
+
 ### ¿Cómo armamos la estructura?
 Basandonos en el siguiente diagrama:
 
