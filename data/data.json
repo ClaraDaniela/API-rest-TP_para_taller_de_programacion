@@ -1,59 +1,59 @@
 [
     {
         "Carrera":{
-          "id": "1",
+          "id": 1,
           "nombre": "Tecnicatura en tecnologias industriales",
           "grado": "Tecnicatura",
           "universidad": "UNPAZ",
           "materias":[
             {
-                "id": "01",
+                "id": 1,
                 "nombre": "Tecnología y Sociedad",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             },
             {
-                "id": "02",
+                "id": 2,
                 "nombre": "Inglés I",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             },
             {
-                "id": "03",
+                "id": 3,
                 "nombre": "Matemática I",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             },
             {
-                "id": "04",
+                "id": 4,
                 "nombre": "Informatica",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             },
             {
-                "id": "05",
+                "id": 5,
                 "nombre": "Mecánica",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             },
             {
-                "id": "06",
+                "id": 6,
                 "nombre": "Electricidad y electrónica",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             },
             {
-                "id": "07",
+                "id": 7,
                 "nombre": "Matemática II",
-                "cuatrimestral": "1",
-                "anio": "1",
-                "carreraId": "1"
+                "cuatrimestral": 1,
+                "anio": 1,
+                "carreraId": 1
             }
         ]
           }
@@ -61,38 +61,38 @@
 
     {
         "Carrera":{
-            "id": "2",
+            "id": 2,
             "nombre": "Licenciatura en biotecnologia",
             "grado": "Licenciatura",
             "universidad": "UNPAZ",
             "materias": [
                 {
-                    "id": "04",
+                    "id": 4,
                     "nombre": "Biología general",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "2"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 2
                 },
                 {
-                    "id": "05",
+                    "id": 5,
                     "nombre": "Taller Introducción a la biotecnología",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "2"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 2
                 },
                 {
-                    "id": "08",
+                    "id": 8,
                     "nombre": "Microbiología general",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "2"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 2
                 },
                 {
-                    "id": "11",
+                    "id": 11,
                     "nombre": "Quimica organica",
-                    "cuatrimestral": "1",
-                    "anio": "2",
-                    "carreraId": "2"
+                    "cuatrimestral": 1,
+                    "anio": 2,
+                    "carreraId": 2
                 }
             ]
           } 
@@ -100,38 +100,38 @@
 
     {
         "Carrera":{
-            "id": "3",
+            "id": 3,
             "nombre": "Licenciatura en Sistemas",
             "grado": "Licenciatura",
             "universidad": "UNGS",
             "materias": [
                 {
-                    "id": "01",
+                    "id": 1,
                     "nombre": "Programacion I",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "3"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 3
                 },
                 {
-                    "id": "02",
+                    "id": 2,
                     "nombre": "Organizacion del computador I",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "3"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 3
                 },
                 {
-                    "id": "03",
+                    "id": 3,
                     "nombre": "Programacion I",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "3"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 3
                 },
                 {
-                    "id": "04",
+                    "id": 4,
                     "nombre": "Sistemas operativos y redes",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "3"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 3
                 }
             ]
           } 
@@ -139,45 +139,45 @@
 
     {
         "Carrera":{
-            "id": "4",
+            "id": 4,
             "nombre": "Licenciatura en tecnologias de la informacion",
             "grado": "Licenciatura",
             "universidad": "UNPAZ",
             "materias": [
                 {
-                    "id": "6003",
+                    "id": 6003,
                     "nombre": "Introducción a la Programación",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "4"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 4
                 },
                 {
-                    "id": "6008",
+                    "id": 6008,
                     "nombre": "Algoritmos y Programación",
-                    "cuatrimestral": "1",
-                    "anio": "1",
-                    "carreraId": "4"
+                    "cuatrimestral": 1,
+                    "anio": 1,
+                    "carreraId": 4
                 },
                 {
-                    "id": "6011",
+                    "id": 6011,
                     "nombre": "Sistemas Operativos I",
-                    "cuatrimestral": "1",
-                    "anio": "2",
-                    "carreraId": "4"
+                    "cuatrimestral": 1,
+                    "anio": 2,
+                    "carreraId": 4
                 },
                 {
-                    "id": "6015",
+                    "id": 6015,
                     "nombre": "Paradigmas de Programación",
-                    "cuatrimestral": "1",
-                    "anio": "2",
-                    "carreraId": "4"
+                    "cuatrimestral": 1,
+                    "anio": 2,
+                    "carreraId": 4
                 },
                 {
-                    "id": "6022",
+                    "id": 6022,
                     "nombre": "Comunicaciones y Redes",
-                    "cuatrimestral": "1",
-                    "anio": "2",
-                    "carreraId": "4"
+                    "cuatrimestral": 1,
+                    "anio": 2,
+                    "carreraId": 4
                 }
             ]
           } 
