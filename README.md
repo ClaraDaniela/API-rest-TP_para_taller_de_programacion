@@ -5,7 +5,13 @@
 - Cardoso Eliana Natasha
 - Cantarino Clara
 
-### ¿Cómo armamos la extructura?
+
+### Comandos necesarios para instalar y ejecutar la Api:
+```npm install express```
+
+```npm install joi```
+
+### ¿Cómo armamos la estructura?
 Basandonos en el siguiente diagrama:
 
 ![DIAGRAMA](DER.png)
@@ -76,9 +82,6 @@ Armamos un archivo json en la carpeta data, ya que no se conecta a una base de d
 
 
 
-## Comandos necesarios para instalar y ejecutar la Api:
-```npm install express```
-```npm install joi```
 
 
 
