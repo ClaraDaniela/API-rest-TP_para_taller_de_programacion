@@ -1,13 +1,15 @@
 const data = require('../../data/data.json')
-const carreras = data.map(item => item.Carrera)
+
+const carreras = data.map(c => c.Carrera)
 
 const existeCarreraById = (req, res, next) => {
     const carreraId = parseInt(req.params.id)
-    const carrera = carreras.find(c => c.id === carreraId)
+
+    const carrera = carreras.find(c => c.id == carreraId)
 
     if (!carrera) {
         return res.status(404).json({
-            error: `No se encuentra la carrera con el id ${carreraId} desde carreras middleware`
+            error: `No se encuentra la carrera con el id ${carreraId}`
         })
     }
     next()

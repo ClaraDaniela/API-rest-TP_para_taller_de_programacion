@@ -9,10 +9,10 @@ const { materiaSchema } = require('../schemas/materias.schema')
 const route = Router()
 
 route.post('/carreras/:id/materia', schemaValidator(materiaSchema), carrerasMiddleware.existeCarreraById, materiasController.createMateria)
-route.get('/carreras/:carreraId/materias', carrerasMiddleware.existeCarreraById, materiasMiddleware.existenMaterias, materiasController.getMateriasByCarreraId)
+route.get('/carreras/:id/materias', carrerasMiddleware.existeCarreraById, materiasMiddleware.existenMateriasCarreraId, materiasController.getMateriasByCarreraId)
 route.get('/materias', materiasMiddleware.existenMaterias, materiasController.getAllMaterias)
-route.get('/carreras/:carreraId/materias/:materiaId', materiasMiddleware.existenMateriasCarreraId, materiasController.getMateriaById)
-route.delete('/carreras/:carreraId/materias/:materiaId', materiasMiddleware.existenMateriasCarreraId, materiasController.deleteMateriaById)
+route.get('/carreras/:id/materias/:materiaId', carrerasMiddleware.existeCarreraById, materiasMiddleware.existenMateriasCarreraId, materiasController.getMateriaById)
+route.delete('/carreras/:id/materias/:materiaId', carrerasMiddleware.existeCarreraById, materiasMiddleware.existenMateriasCarreraId, materiasController.deleteMateriaById)
 
 module.exports = route
 

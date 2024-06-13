@@ -1,17 +1,14 @@
 const data = require('../../data/data.json')
 
-const carreras = data.map(c => c.Carrera) //convierto las carreras, porque estan anidadas
+const carreras = data.map(c => c.Carrera) 
 
-const getAllCarreras = (req, res)=>{
+const getAllCarreras = (req, res) => {
     res.status(200).json(carreras)
 }
 
 const getCarreraById = (req, res) => {
     const id = req.params.id
     const carrera = carreras.find(c => c.id == id)
-    if (!carrera) {
-        return res.status(404).json({ error: 'Carrera no encontrada' })
-    }
     res.status(200).json(carrera)
 }
 
@@ -34,8 +31,8 @@ const deleteCarreraById = (req, res) => {
         const borrados = carreras.splice(idx, 1)
         res.status(200).json({ mensaje: `La carrera con id ${id} fue borrada con éxito`, objeto: borrados[0] })
     } else {
-        res.status(404).json({ error: `La carrera con id ${id} no se encuentra` })
+        res.status(404).json({ error: `La carrera con id ${id} no se pudo borrar` })
     }
 }
 
-module.exports = { getAllCarreras, getCarreraById, createCarrera, deleteCarreraById, carreras}
+module.exports = { getAllCarreras, getCarreraById, createCarrera, deleteCarreraById }
