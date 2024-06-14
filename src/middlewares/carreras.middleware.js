@@ -16,7 +16,7 @@ const existeCarreraById = (req, res, next) => {
 }
 
 const existenCarreras = (req, res, next) => {
-    if (carreras.length === 0) {
+    if (carreras.length == 0) {
         return res.status(400).json({
             error: "No existen carreras por el momento"
         })

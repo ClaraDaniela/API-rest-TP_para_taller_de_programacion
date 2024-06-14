@@ -2,7 +2,8 @@ const Joi = require('joi')
 const { materiaSchema } = require('./materias.schema')
 
 const carreraSchema = Joi.object({
-    nombre: Joi.string().max(50).required().messages({
+    nombre: Joi.string().min(5).max(50).required().messages({
+        "string.min": "nombre debe tener al menos {#limit} caracteres",
         "string.max": "nombre debe tener como máximo {#limit} caracteres",
         "string.empty": "nombre no debe ser vacío",
         "any.required": "nombre es requerido"
@@ -11,7 +12,8 @@ const carreraSchema = Joi.object({
         "any.required": "grado es requerido",
         "any.only": "Los grados solo pueden ser Licenciatura, Tecnicatura o Diplomatura"
     }),
-    universidad: Joi.string().max(50).required().messages({
+    universidad: Joi.string().min(5).max(50).required().messages({
+        "string.min": "universidad debe tener al menos {#limit} caracteres",
         "string.max": "universidad debe tener como máximo {#limit} caracteres",
         "string.empty": "universidad no debe ser vacía",
         "any.required": "universidad es requerida"
@@ -23,3 +25,4 @@ const carreraSchema = Joi.object({
 })
 
 module.exports = { carreraSchema }
+

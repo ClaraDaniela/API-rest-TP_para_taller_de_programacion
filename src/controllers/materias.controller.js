@@ -2,12 +2,12 @@ const data = require('../../data/data.json')
 
 const carreras = data.map(c => c.Carrera)
 
-const getAllMaterias = (req, res) => {
+const getAllMaterias = async (req, res) => {
     const allMaterias = carreras.flatMap(carrera => carrera.materias)
-    res.status(200).json(allMaterias)
+    await res.status(200).json(allMaterias)
 }
 
-const createMateria = (req, res) => {
+const createMateria = async (req, res) => {
     const materia = req.body
     const carreraId = parseInt(req.params.id)
 
@@ -22,18 +22,18 @@ const createMateria = (req, res) => {
     const nuevaMateria = { id, ...materia, carreraId }
     carrera.materias.push(nuevaMateria)
 
-    res.status(201).json(nuevaMateria)
+    await res.status(201).json(nuevaMateria)
 }
 
-const getMateriasByCarreraId = (req, res) => {
+const getMateriasByCarreraId = async (req, res) => {
     const id = req.params.id
 
     const carrera = carreras.find(c => c.id == id)
 
-    res.status(200).json(carrera.materias)
+    await res.status(200).json(carrera.materias)
 }
 
-const getMateriaById = (req, res) => {
+const getMateriaById = async (req, res) => {
     const id = req.params.id
     const materiaId = req.params.materiaId
 
@@ -41,10 +41,10 @@ const getMateriaById = (req, res) => {
 
     const materia = carrera.materias.find(m => m.id == materiaId)
 
-    res.status(200).json(materia)
+    await res.status(200).json(materia)
 }
 
-const deleteMateriaById = (req, res) => {
+const deleteMateriaById = async (req, res) => {
     const id = req.params.id
     const materiaId = req.params.materiaId
 
@@ -53,10 +53,8 @@ const deleteMateriaById = (req, res) => {
     const materiaIdx = carrera.materias.findIndex(m => m.id == materiaId)
     if (materiaIdx >= 0) {
         const borrada = carrera.materias.splice(materiaIdx, 1)
-        res.status(200).json({ mensaje: `La materia con id ${materiaId} fue borrada con éxito`, objeto: borrada[0] })
-    } else {
-        res.status(404).json({ error: `La materia con id ${materiaId} no se pudo borrar` })
-    }
+        await res.status(200).json({ mensaje: `La materia con id ${materiaId} fue borrada con éxito`, objeto: borrada[0] })
+    } 
 }
 
 module.exports = { createMateria, getMateriasByCarreraId, getAllMaterias, getMateriaById, deleteMateriaById }
