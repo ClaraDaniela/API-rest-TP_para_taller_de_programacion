@@ -9,16 +9,26 @@
 ### Comandos necesarios para instalar y ejecutar la Api:
 
 Principalmente, para poder usarla, hay que descargarla desde el repositorio de git. Se abre el git bash desde el directorio donde la queremos descargar, y se ejecuta el comando:
+
 ```git clone ```
+
 Una vez que la tenemos clonada, hay que verificar si tenemos las dependencias necesarias para utilizarla. Hay que asegurarse de que tenemos Node.js y npm (Node Package Manager) instalados en tu máquina, con los siguientes comandos lo sabremos:
+
 ```node -v```
 
 ```npm -v```
-Luego, si no se las tiene, se ejecuta este comando:
+
+Luego, si no se las tiene, se instala Node.js y se ejecuta este comando:
+
 ```npm install```
+
 Una vez instaladas las dependencias, vamos a ejecutar la api, se le puede asignar un puerto, o sino por defecto usara el puerto 3000:
+
 ```PORT=3001 npm run dev```
 
+O en su defecto:
+
+```npm run dev```
 
 ### ¿Cómo armamos la estructura?
 
