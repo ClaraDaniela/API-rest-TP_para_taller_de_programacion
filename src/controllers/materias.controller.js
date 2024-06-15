@@ -9,7 +9,7 @@ const getAllMaterias = async (req, res) => {
 
 const createMateria = async (req, res) => {
     const materia = req.body
-    const carreraId = parseInt(req.params.id)
+    const carreraId = req.params.id
 
     const carrera = carreras.find(c => c.id == carreraId)
 
@@ -35,25 +35,21 @@ const getMateriasByCarreraId = async (req, res) => {
 
 const getMateriaById = async (req, res) => {
     const id = req.params.id
-    const materiaId = req.params.materiaId
 
-    const carrera = carreras.find(c => c.id == id)
-
-    const materia = carrera.materias.find(m => m.id == materiaId)
+    const materias = carreras.flatMap(carrera => carrera.materias)
+    const materia = materias.find(m => m.id == id)
 
     await res.status(200).json(materia)
 }
 
 const deleteMateriaById = async (req, res) => {
     const id = req.params.id
-    const materiaId = req.params.materiaId
+    const materias = carreras.flatMap(carrera => carrera.materias)
 
-    const carrera = carreras.find(c => c.id == id)
-
-    const materiaIdx = carrera.materias.findIndex(m => m.id == materiaId)
+    const materiaIdx = materias.findIndex(m => m.id == id)
     if (materiaIdx >= 0) {
-        const borrada = carrera.materias.splice(materiaIdx, 1)
-        await res.status(200).json({ mensaje: `La materia con id ${materiaId} fue borrada con éxito`, objeto: borrada[0] })
+        const borrada = materias.splice(materiaIdx, 1)
+        await res.status(200).json({ mensaje: `La materia con id ${id} fue borrada con éxito`, objeto: borrada[0] })
     } 
 }
 

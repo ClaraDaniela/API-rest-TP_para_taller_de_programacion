@@ -3,7 +3,7 @@ const data = require('../../data/data.json')
 const carreras = data.map(c => c.Carrera)
 
 const existeCarreraById = (req, res, next) => {
-    const carreraId = parseInt(req.params.id)
+    const carreraId = req.params.id
 
     const carrera = carreras.find(c => c.id == carreraId)
 
