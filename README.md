@@ -4,6 +4,7 @@
 
 - Cardoso Eliana Natasha
 - Cantarino Clara
+- Morandi Diego
 
 
 ### Comandos necesarios para instalar y ejecutar la Api:
