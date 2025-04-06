@@ -1,12 +1,3 @@
-# Estrellas Y Código
-
-## Integrantes
-
-- Cardoso Eliana Natasha
-- Cantarino Clara
-- Morandi Diego
-
-
 ### Comandos necesarios para instalar y ejecutar la Api:
 
 Principalmente, para poder usarla, hay que descargarla desde el repositorio de git. Se abre el git bash desde el directorio donde la queremos descargar, y se ejecuta el comando:
